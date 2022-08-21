@@ -9,10 +9,10 @@
   </head>
   <body>
     <header>
-    <div class="topnav">
-      <a class="active" href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-    </div>
+      <div class="topnav">
+        <a class="active" href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+      </div>
     </header>
     <div id="main-heading-banner">
       <h1 id="main-heading">Mission One</h1>
@@ -21,17 +21,12 @@
     <br />
     <div id="main-content">
       <p id="main-text">
-        This is where the main content will be. This is where the main content
-        will be. This is where the main content will be. This is where the main
-        content will be. This is where the main content will be. This is where
-        the main content will be. This is where the main content will be. This
-        is where the main content will be. This is where the main content will
-        be. This is where the main content will be. This is where the main
-        content will be. This is where the main content will be. This is where
-        the main content will be. This is where the main content will be. This
-        is where the main content will be. This is where the main content will
-        be. This is where the main content will be. This is where the main
-        content will be. This is where the main content will be.
+        This week, our Mission Leader Rueben took us through the basics of HTML
+        and CSS. It has been a wild ride through the world of divs, hyperlinks,
+        buttons, forms, font stylings, and even animations! The possibilities
+        for structure and style are endless. Even though this page is static,
+        there are aspects of it that I have made come to life using some
+        transition effects.
       </p>
       <img
         id="supporting-image"
@@ -50,27 +45,40 @@
     <footer>
       <h3 id="contact-form-heading">Get in touch:</h3>
       <div class="container">
-  <form action="action_page">
+        <form action="action_page">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="aotearoa">Aotearoa</option>
+            <option value="other">Other(please specify in message)</option>
+          </select>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="aotearoa">Aotearoa</option>
-      <option value="other">Other(please specify in message)</option>
-    </select>
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </footer>
   </body>
 </html>
