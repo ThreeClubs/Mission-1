@@ -14,7 +14,7 @@ header {
 #main-heading-banner {
  background-image: url(images/blue-sky-banner.jpg);
  width: 100%;
- min-width: 720px;
+ min-width: 480px;
  margin: 0 auto;
  border: 1px solid transparent;
  
@@ -48,6 +48,7 @@ p {
   height: 45vh;
   width: 100%;
   max-width: 960px;
+  min-width: 480px;
   margin: 0 auto;
   border: solid 1px black;
   background-color: #e8ddeb;
@@ -112,6 +113,8 @@ p {
 
 #link-banner {
   margin: 35px 0px;
+ max-width: 960px;
+  min-width: 480px;
 }
 
 #link-text {
@@ -121,6 +124,12 @@ p {
 
 /* Contact form */
 
+
+footer {
+ text-align: center;
+  max-width: 960px;
+  min-width: 480px;
+}
 
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -149,8 +158,32 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #7a458f;;
+  background-color: #d0b7da;;
   padding: 20px;
-  max-width: 960px;
   margin: 0 auto;
+}
+
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.topnav a {
+  color: rgb(255, 253, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(216, 195, 214);
+  color: black;
+  font-size: 19px;
+}
+
+.topnav a.active {
+   background-color: rgb(177, 71, 177);
+  color: white;
 }
