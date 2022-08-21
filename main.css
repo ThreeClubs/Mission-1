@@ -1,0 +1,156 @@
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  background-color: #380568;
+  text-align: center;
+}
+
+header {
+    background-color: #7a458f;
+    height: 75px;
+    width: 100%;
+}
+
+#main-heading-banner {
+ background-image: url(images/blue-sky-banner.jpg);
+ width: 100%;
+ min-width: 720px;
+ margin: 0 auto;
+ border: 1px solid transparent;
+ 
+}
+
+#main-heading {
+  color: purple;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+#main-sub-heading {
+  color: rgb(197, 64, 197);
+  font-size: 3rem;
+}
+
+#contact-form-heading {
+  color: rgb(252, 250, 253);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  color: #222222;
+}
+
+#main-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45vh;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border: solid 1px black;
+  background-color: #e8ddeb;
+  
+}
+#main-text {
+    margin: 0 25px;
+     height: 300px;
+     min-width: 360px;
+     max-width: 480px;
+    border-radius: 25px;
+    padding: 25px;
+    text-align:left;
+    background-color: white;
+    
+}
+#supporting-image {
+  
+   height: 300px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: right;
+   margin: 0 25px;
+   min-width: 360px;
+   max-width: 480px;
+   
+   border-radius: 50%;
+   padding: 25px;
+    background-color: white;
+}
+
+@media screen and (max-width: 720px) {
+    #main-content {
+        flex-direction: column;
+        padding: 25px 0px;
+        height: 80vh;
+    }
+    #main-text {
+        margin-bottom: 25px;
+    }
+}
+
+.hyperlink {
+  text-decoration: none;
+  color: rgb(44, 0, 95);
+  font-weight: 700;
+  background-color: rgb(228, 215, 35);
+  padding: 10px 25px;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px rgb(95, 95, 95);
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.hyperlink:hover {
+  font-size: 1.3rem;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+ background-color: rgb(195, 253, 87);
+
+}
+
+#link-banner {
+  margin: 35px 0px;
+}
+
+#link-text {
+    color: white;
+    letter-spacing: 0.3em;
+}
+
+/* Contact form */
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #7a458f;;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
