@@ -42,23 +42,22 @@ p {
 }
 
 #main-content {
-  display: flex;
+  display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 45vh;
+  height: 65vh;
   width: 100%;
   max-width: 960px;
   min-width: 480px;
   margin: 0 auto;
   border: solid 1px black;
   background-color: #e8ddeb;
+  border-radius: 35px;
   
 }
 #main-text {
     margin: 0 25px;
      height: 300px;
-     min-width: 360px;
-     max-width: 480px;
     border-radius: 25px;
     padding: 25px;
     text-align:left;
@@ -72,9 +71,6 @@ p {
    background-repeat: no-repeat;
    background-position: right;
    margin: 0 25px;
-   min-width: 360px;
-   max-width: 480px;
-   
    border-radius: 50%;
    padding: 25px;
     background-color: white;
@@ -84,7 +80,7 @@ p {
     #main-content {
         flex-direction: column;
         padding: 25px 0px;
-        height: 80vh;
+        height: 115vh;
     }
     #main-text {
         margin-bottom: 25px;
