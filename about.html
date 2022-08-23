@@ -4,9 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Mission One</title>
+    <link href="main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>About</title>
   </head>
   <body>
-    <h1>About Mission One</h1>
+    <nav class="topnav">
+      <a class="nav-btn" href="index.html">HOME</a>
+      <a class="nav-btn active" href="about.html">ABOUT</a>
+    </nav>
+
+    <header id="main-heading-banner">
+      <h1 id="main-heading">About Mission One</h1>
+      <h2 id="main-sub-heading">A handy dandy PDF</h2>
+    </header>
+    <main>
+      <embed src="Mission 1.pdf" />
+    </main>
+
+    <section class="link-banner" id="about-link">
+      <p id="link-text">
+        Click <a class="hyperlink" href="index.html">here</a> to go home.
+      </p>
+    </section>
+
+    <footer>
+      <a
+        id="git-txt"
+        class="footer-txt"
+        href="https://github.com/ThreeClubs/Mission-1"
+        target="_blank"
+      >
+        Check out this site's repository on GitHub
+        <i id="icon" class="fa fa-github"></i>
+      </a>
+      <p id="copyright" class="footer-txt">Copyright Andrew Grenon 2022</p>
+    </footer>
   </body>
 </html>
