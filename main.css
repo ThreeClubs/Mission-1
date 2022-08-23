@@ -260,22 +260,24 @@ input[type="submit"]:hover {
 
 footer {
    background: linear-gradient(75deg, #492e39, #2a2044);
+   margin-top: 10px;
+   padding: 10px;
 }
 
 .footer-txt {
    color: white;
    text-shadow: 1px 1px 2px rgb(44, 0, 95);
    font-size: 1.2rem;
+   padding: 20px
 }
 
 #git-txt {
   font-weight: 700;
-  padding: 10px;
+  text-decoration: none;
 }
 
 #copyright {
   font-style: italic;
-  padding: 10px;
 }
 
 #icon {
