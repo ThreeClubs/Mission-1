@@ -1,106 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="main.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Mission One</title>
-  </head>
-  <body>
-    <nav class="topnav">
-      <a class="nav-btn active" href="index.html">HOME</a>
-      <a class="nav-btn" href="about.html">ABOUT</a>
-    </nav>
 
-    <header id="main-heading-banner">
-      <h1 id="main-heading">Mission One</h1>
-      <h2 id="main-sub-heading">HTML and CSS</h2>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Mission One</title>
+</head>
 
-    <main id="main-content">
-      <div>
-        <img
-          id="supporting-image"
-          alt="an image that supports stuff"
-          src="images/Andrew-Grenontenor-1.jpg"
-        />
-        <p id="name">Andrew Grenon</p>
-        <p id="role">Mission Candidate</p>
-      </div>
-      <div>
-        <p id="main-text">
-          "This week, our Mission Leader Rueben took us through the basics of
-          HTML and CSS. It has been a wild ride through the world of divs,
-          hyperlinks, buttons, forms, font stylings, and even animations! The
-          possibilities for structure and style are endless. Even though this
-          page is static, there are aspects of it that I have made come to life
-          using some transition effects."
-        </p>
-      </div>
-    </main>
+<body>
+  <nav class="topnav">
+    <a class="nav-btn active" href="index.html">HOME</a>
+    <a class="nav-btn" href="about.html">ABOUT</a>
+  </nav>
 
-    <section class="link-banner">
-      <p id="link-text">
-        Click <a class="hyperlink" href="about.html">here</a> to learn more
-        about this mission.
+  <header id="main-heading-banner">
+    <h1 id="main-heading">Mission One</h1>
+    <h2 id="main-sub-heading">HTML and CSS</h2>
+  </header>
+
+  <main id="main-content">
+    <div>
+      <img id="supporting-image" alt="an image that supports stuff" src="images/Andrew-Grenontenor-1.jpg" />
+      <p id="name">Andrew Grenon</p>
+      <p id="role">Mission Candidate</p>
+    </div>
+    <div>
+      <p id="main-text">
+        "This week, our Mission Leader Rueben took us through the basics of
+        HTML and CSS. It has been a wild ride through the world of divs,
+        hyperlinks, buttons, forms, font stylings, and even animations! The
+        possibilities for structure and style are endless. Even though this
+        page is static, there are aspects of it that I have made come to life
+        using some transition effects."
       </p>
-    </section>
+    </div>
+  </main>
 
-    <section>
-      <h3 id="contact-form-heading">Get in touch:</h3>
-      <div class="container">
-        <form action="contact-me">
-          <label for="fname">First Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-          />
+  <section class="link-banner">
+    <p id="link-text">
+      Click <a class="hyperlink" href="about.html">here</a> to learn more
+      about this mission.
+    </p>
+  </section>
 
-          <label for="lname">Last Name</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          />
+  <section>
+    <h3 id="contact-form-heading">Get in touch:</h3>
+    <div class="container">
+      <form method="link" action="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="aotearoa">Aotearoa</option>
-            <option value="other">Other(please specify in message)</option>
-          </select>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
 
-          <label for="subject">Subject</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something.."
-            style="height: 250px"
-          ></textarea>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="aotearoa">Aotearoa</option>
+          <option value="other">Other(please specify in message)</option>
+        </select>
 
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </section>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height: 250px"></textarea>
 
-    <footer>
-      <a
-        id="git-txt"
-        class="footer-txt"
-        href="https://github.com/ThreeClubs/Mission-1"
-        target="_blank"
-      >
-        Check out this site's repository on GitHub
-        <i id="icon" class="fa fa-github"></i>
-      </a>
-      <p id="copyright" class="footer-txt">Copyright Andrew Grenon 2022</p>
-    </footer>
-  </body>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <a id="git-txt" class="footer-txt" href="https://github.com/ThreeClubs/Mission-1" target="_blank">
+      Check out this site's repository on GitHub
+      <i id="icon" class="fa fa-github"></i>
+    </a>
+    <p id="copyright" class="footer-txt">Copyright Andrew Grenon 2022</p>
+  </footer>
+</body>
+
 </html>
