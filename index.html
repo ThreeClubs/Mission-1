@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Mission One</title>
   </head>
   <body>
-    <header>
-      <div class="topnav">
-        <a class="active" href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-      </div>
-    </header>
-    <div id="main-heading-banner">
+    <nav class="topnav">
+      <a class="nav-btn active" href="index.html">HOME</a>
+      <a class="nav-btn" href="about.html">ABOUT</a>
+    </nav>
+
+    <header id="main-heading-banner">
       <h1 id="main-heading">Mission One</h1>
       <h2 id="main-sub-heading">HTML and CSS</h2>
-    </div>
-    <br />
-    <div id="main-content">
+    </header>
+
+    <main id="main-content">
       <div>
         <img
           id="supporting-image"
@@ -39,19 +42,19 @@
           using some transition effects."
         </p>
       </div>
-    </div>
-    <br />
-    <div id="link-banner">
+    </main>
+
+    <section id="link-banner">
       <p id="link-text">
         Click <a class="hyperlink" href="about.html">here</a> to learn more
         about this mission.
       </p>
-    </div>
-    <br />
-    <footer>
+    </section>
+
+    <section>
       <h3 id="contact-form-heading">Get in touch:</h3>
       <div class="container">
-        <form action="action_page">
+        <form action="contact-me">
           <label for="fname">First Name</label>
           <input
             type="text"
@@ -79,12 +82,20 @@
             id="subject"
             name="subject"
             placeholder="Write something.."
-            style="height: 200px"
+            style="height: 250px"
           ></textarea>
 
           <input type="submit" value="Submit" />
         </form>
       </div>
+    </section>
+
+    <footer>
+      <p id="git-txt" class="footer-txt">
+        Check out this site's repository on GitHub
+        <i id="icon" class="fa fa-github"></i>
+      </p>
+      <p id="copyright" class="footer-txt">Copyright Andrew Grenon 2022</p>
     </footer>
   </body>
 </html>

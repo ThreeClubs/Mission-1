@@ -1,15 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 auto;
   background-color: #380568;
   text-align: center;
 }
 
-header {
-  background-color: #7a458f;
-  height: 75px;
-  width: 100%;
+p {
+  color: #222222;
 }
+
+section {
+  text-align: center;
+  max-width: 960px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+
+
+/* nav bar */
+
+/* (with Responsive layout) */
+
+@media screen and (max-width: 768px) {
+  .topnav,
+  .section {
+    flex-direction: column;
+  }
+  .nav-btn {
+    border: 1px solid rgb(167, 137, 165);
+    width: 100%;
+    box-shadow: 1px 1px 1px rgb(216, 226, 202);
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(75deg, #492e39, #2a2044);
+}
+
+.topnav a {
+  color: rgb(255, 253, 255);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(216, 195, 214);
+  color: black;
+  font-size: 19px;
+}
+
+.topnav a.active {
+  background-color: rgb(177, 71, 177);
+  color: white;
+}
+
+/* header banner */
 
 #main-heading-banner {
   background-image: url(images/blue-sky-banner.jpg);
@@ -17,8 +74,7 @@ header {
   background-size: cover;
   width: 100%;
   min-width: 480px;
-  margin: 0 auto;
-  border: 1px solid transparent;
+  padding: 110px 0px 50px 0px;
 }
 
 #main-heading {
@@ -32,14 +88,10 @@ header {
   font-size: 3rem;
 }
 
-#contact-form-heading {
-  color: rgb(252, 250, 253);
-  font-size: 2rem;
-  font-weight: 700;
-}
+/* main content */
 
-p {
-  color: #222222;
+main {
+  margin: 50px;
 }
 
 #main-content {
@@ -50,7 +102,6 @@ p {
   width: 100%;
   max-width: 960px;
   min-width: 480px;
-  margin: 0 auto;
   background-color: #e8ddeb;
   border-radius: 35px;
 }
@@ -81,13 +132,11 @@ p {
 }
 
 #supporting-image:hover {
-  
   background-color: rgb(255, 250, 185);
   transform: rotateZ(360deg);
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
-  }
-
+}
 
 #main-text:hover {
   font-size: 1.4rem;
@@ -126,12 +175,14 @@ p {
   }
 }
 
+/* link to about */
+
 .hyperlink {
   text-decoration: none;
   color: rgb(44, 0, 95);
   font-weight: 700;
   background-color: rgb(228, 215, 35);
-  padding: 10px 25px;
+  padding: 15px 25px;
   border-radius: 25px;
   box-shadow: 0 3px 10px rgb(95, 95, 95);
   transition-duration: 1s;
@@ -158,24 +209,24 @@ p {
 
 /* Contact form */
 
-footer {
-  text-align: center;
-  max-width: 960px;
-  min-width: 480px;
-  margin: 0 auto;
+#contact-form-heading {
+  color: rgb(252, 250, 253);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 50px 0px 25px 0;
 }
 
 input[type="text"],
 select,
 textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical; 
+  resize: vertical;
 }
 
 input[type="submit"] {
@@ -202,30 +253,45 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #d0b7da;
   padding: 20px;
-  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-.topnav {
-  background-color: transparent;
-  overflow: hidden;
-  padding: 20px;
+/* footer */
+
+footer {
+   background: linear-gradient(75deg, #492e39, #2a2044);
 }
 
-.topnav a {
-  color: rgb(255, 253, 255);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.footer-txt {
+   color: white;
+   text-shadow: 1px 1px 2px rgb(44, 0, 95);
+   font-size: 1.2rem;
 }
 
-.topnav a:hover {
-  background-color: rgb(216, 195, 214);
-  color: black;
-  font-size: 19px;
+#git-txt {
+  font-weight: 700;
+  padding: 10px;
 }
 
-.topnav a.active {
-  background-color: rgb(177, 71, 177);
-  color: white;
+#copyright {
+  font-style: italic;
+  padding: 10px;
+}
+
+#icon {
+  animation-name: flip;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: 2rem;
+}
+
+@keyframes flip {
+  from{
+    color: whitesmoke;
+  }
+  to {
+    transform: rotateY(360deg);
+    color: purple;
+  }
 }
