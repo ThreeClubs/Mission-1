@@ -90,11 +90,13 @@ embed {
   color: purple;
   font-weight: 700;
   font-size: 6rem;
+  text-shadow: 1px 1px 1px black;
 }
 
 #main-sub-heading {
   color: rgb(197, 64, 197);
   font-size: 3rem;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* main content */
