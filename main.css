@@ -31,19 +31,22 @@ embed {
 /* (with Responsive layout) */
 
 @media screen and (max-width: 768px) {
+
   .topnav,
   .section {
     flex-direction: column;
   }
+
   .nav-btn {
     border: 1px solid rgb(167, 137, 165);
     width: 100%;
     box-shadow: 1px 1px 1px rgb(216, 226, 202);
   }
+
   embed {
-  width: 100%;
-  height: 500px;
-}
+    width: 100%;
+    height: 500px;
+  }
 }
 
 .topnav {
@@ -177,10 +180,12 @@ main {
     padding: 25px 0px;
     height: 700px;
   }
+
   #main-text {
     margin-bottom: 25px;
     text-align: center;
   }
+
   #supporting-image {
     background-position: center;
   }
@@ -274,16 +279,16 @@ input[type="submit"]:hover {
 /* footer */
 
 footer {
-   background: linear-gradient(75deg, #492e39, #2a2044);
-   margin-top: 10px;
-   padding: 10px;
+  background: linear-gradient(75deg, #492e39, #2a2044);
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .footer-txt {
-   color: white;
-   text-shadow: 1px 1px 2px rgb(44, 0, 95);
-   font-size: 1.2rem;
-   padding: 20px
+  color: white;
+  text-shadow: 1px 1px 2px rgb(44, 0, 95);
+  font-size: 1.2rem;
+  padding: 20px
 }
 
 #git-txt {
@@ -304,9 +309,10 @@ footer {
 }
 
 @keyframes flip {
-  from{
+  from {
     color: whitesmoke;
   }
+
   to {
     transform: rotateY(360deg);
     color: purple;
